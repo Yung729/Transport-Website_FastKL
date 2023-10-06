@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+table{
+    color: blue;
+    background-color: rgb(127, 105, 139);
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+tr:first-of-type td:nth-of-type(2), tr:first-of-type td:nth-of-type(3), tr:nth-of-type(odd) td {
+    text-align: center;
+    color: black;
+    background-color: rgb(85, 145, 198);
+    border: 3px solid rgb(53, 53, 180);
+    height: 80px;
+    font-size: large;
+}
+
+th, tr:first-of-type td:first-of-type, tr:nth-of-type(even) td{
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 140, 253);
+    border: 3px solid rgb(40, 9, 117);
+    height: 80px;
+    font-size: large;
+}
+
+/*button style*/
+button#ticket{
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #213D54;
+    color: #213D54;
+    cursor: pointer;
+    font-size: .75rem;
+    outline: none;
+    font-weight: bolder;
+    position: relative;
+    left: 83%;
+    margin-bottom: 3%;
+}
+
+button#ticket:hover{
+    background-color: #213D54;
+    color:white;
+}

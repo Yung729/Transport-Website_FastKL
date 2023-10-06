@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+h1#titlePrice{
+    margin-top: 3%;
+    margin-left: 8%;
+    color: #263746;
+}
+
+article#introPrice{
+    margin-left: 8%;
+    color: black;
+    font-size: large;
+}
+
+.price td,.price th{
+    padding: 0.9%;
+}
+
+table.price{
+    border: 3px solid blue;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+section table.price tr td:first-of-type, tr:first-of-type td:nth-of-type(2){
+    color: white;
+    background-color: #16558f;
+    border: 3px solid black;
+    height: 60px;
+}
+
+tr td:nth-of-type(odd){
+    color: white;
+    background-color: #61B0B7;
+    border:3px solid black;
+    height: 60px;
+}
+
+tr td:nth-of-type(even){
+    color: white;
+    background-color: rgb(72, 99, 160);
+    border: 3px solid black;
+    height: 60px;
+}
+
+#introPrice i{
+    display: block;
+    text-align: justify;
+    width: 50%;
+    line-height: 2;
+    margin-top: 2%;
+}

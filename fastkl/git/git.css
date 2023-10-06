@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/*font*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Sora-VariableFont_wght.ttf);
+  }
+  /**/
+  
+  article {
+    font-family: 
+    myFirstFont;
+  }
+/*center*/
+#middle {
+  width: 90%;
+  margin: auto;
+}
+/*title and description*/
+.h{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(33, 61, 84);
+    text-align: center;
+    }
+
+/*form*/
+.form-container
+{
+    margin: 2% 5% 2% 5%;
+    font-weight: 900;
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(78, 10, 126, 0.19);
+    float: middle;
+    width: 90%;
+    height: 70%;
+}
+
+#contactusform{
+    height: 100%;
+}
+
+.form-container form,.form-container label,.form-container p
+{    
+    color: #213D54;
+}
+.form-container h1
+{
+    text-align: center;
+     
+    border-bottom: 3px solid #213D54;
+    color: #213D54;
+    line-height: 1.5;
+    margin-bottom: 2% ;
+} 
+
+.form-container label
+{
+    margin: 3% 3% 1% 5%;
+}
+
+
+input[type=text],select
+{
+    width: 90%;
+    padding: 1%;
+    border: 2px solid #213D54;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 1% 3% 1% 5%;
+    resize: vertical; 
+    
+}
+
+textarea
+{
+    width: 90%;
+    height: 60px;
+    padding: 1%;
+    border: 2px solid #213D54;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 1% 3% 1% 5%;
+    resize: none; 
+    
+}
+
+
+::placeholder
+{
+    color: black;
+}
+/*button*/
+input[type=submit]
+{
+    background-color: #336699;
+    color: white;
+    padding: 1% 1.5%;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin: 1% 3% 2% 46%;
+}
+
+input[type=submit]:hover 
+{
+    background-color: #3f7fbe;
+}
+/*validation*/
+input#phone:focus:valid,input#office:focus:valid,input#email:focus:valid{
+    background: rgb(220, 255, 220) url(../contactus/source/rb_okay.png) right/contain no-repeat;
+}
+
+input#phone:focus:invalid,input#office:focus:invalid,input#email:focus:invalid{
+    background: rgb(225, 230, 230) url(../contactus/source/rb_warning.png) right/contain no-repeat;
+}
+
+@media only screen and (max-width: 769px) {
+ /*form*/
+.form-container
+{
+    margin: 2% 0 2% 0;
+    font-weight: 900;
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(78, 10, 126, 0.19);
+    float: middle;
+    width: 100%;
+    height: 70%;
+}
+
+}

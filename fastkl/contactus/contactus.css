@@ -1,0 +1,243 @@
+h1
+{
+    text-align: center;   
+    font-weight: 600;
+    font-size: 2.2em;
+    color: #213D54;
+    margin: 1% 1%; 
+    clear: both;
+}
+
+body{
+    width: 100%;
+}
+
+.container1{
+    display: block;
+    margin: 2%;
+    height: 800px;
+}
+
+/*form*/
+.form-container
+{
+    margin: 0 2%;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(79, 79, 79, 0.19);
+    float: left;
+    width: 56%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#contactusform{
+    height: 100%;
+}
+
+.form-container form,.form-container label,.form-container p
+{    
+    color: #213D54;
+}
+.form-container h2
+{
+    text-align: center;
+}
+
+.form-container h3 
+{
+    text-align: center;
+    font-weight: 10px;
+    font-size: 1em;
+    border-bottom: 3px solid #213D54;
+    color: #213D54;
+    line-height: 1.5;
+    margin-bottom: 2% ;
+}
+.form-container label
+{
+    margin: 3% 3% 1% 2%;
+}
+
+
+input[type=checkbox]
+{
+    margin-left: 2%;
+    font-size: 1em;
+}
+input[type=text],input[type=email],input[type=tel],select
+{
+    width: 90%;
+    padding: 1%;
+    border: 2px solid #213D54;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 1% 3% 1% 2%;
+    resize: vertical; 
+    
+}
+
+textarea
+{
+    width: 90%;
+    height: 200px;
+    padding: 1%;
+    border: 2px solid #213D54;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 1% 3% 1% 2%;
+    resize: none; 
+    
+}
+
+
+::placeholder
+{
+    color: black;
+}
+
+input[type=submit]
+{
+    float: right;
+    margin: 0 5% 5% 0;
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #213D54;
+    color: #213D54;
+    cursor: pointer;
+    font-size: .75rem;
+    outline: none;
+    font-weight: bolder;
+
+}
+
+input[type=submit]:hover 
+{
+    background-color: #213D54;
+    color:white;
+}
+
+input#contact:focus:valid,input#email:focus:valid{
+    background: rgb(220, 255, 220) url(../contactus/source/rb_okay.png) right/contain no-repeat;
+}
+
+input#contact:focus:invalid,input#email:focus:invalid{
+    background: rgb(225, 230, 230) url(../contactus/source/rb_warning.png) right/contain no-repeat;
+}
+
+/*faq design*/
+.faq{
+    display: block;
+    width: 40%;
+    height: auto;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(79, 79, 79, 0.19);
+    border-radius: 30px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.faq h1{
+    font-size: normal;
+    margin-bottom: 2%;
+    padding: 0;
+}
+
+div[class^=faqBox] button {
+    padding: 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.faqBox-travel button{
+    background-color: #E1D5D3;
+}
+
+div.faqBox-pass button{
+    background-color: #B5A39D;
+}
+
+div.faqBox-map button{
+    background-color: #A4878A;
+}
+
+div.faqBox-cash button{
+    background-color: #9C7B71;
+}
+
+div[class^=faqBox] {
+    width:100%;
+}
+
+div[class^=faqBox] button img {
+    float: right;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+div[class^=faqBox] button h2 {
+    float: left;
+    font-size: 2em;
+    margin: 20px;
+}
+
+[id^=dropdown-icon] {
+    transition: .5s ease;
+}
+
+.faq [id^=message]{
+    display: none;
+}
+
+.question p{
+    width: 100%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.question table{
+    border-collapse: collapse;
+    margin-left: 2%;
+    margin-bottom: 2%;
+
+}
+
+.question th{
+    background-color: #213D54;
+    color: aliceblue;
+    padding: 1%;
+}
+
+.question td:nth-of-type(even){
+    background-color: rgb(166, 167, 167);
+    width: 100%;
+}
+
+.question td:nth-of-type(odd){
+    background-color: rgb(201, 204, 204);
+    width: 50%;
+}
+
+.question .pic img{
+    width: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 2% 0;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .faq{
+        width: 100%;
+        margin: 5% 0;
+        display: block;
+    }
+
+    .form-container{
+        width: 98%;
+        display: block;
+    }
+}

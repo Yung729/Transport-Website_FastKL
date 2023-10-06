@@ -1,0 +1,299 @@
+
+
+article {
+  font-family: 
+  myFirstFont;
+}
+
+/*top*/
+.h{
+  color: rgb(33, 61, 84);
+  text-align: center;
+  background-color: rgb(143, 154, 192);
+  }
+  
+  /*title description*/
+  .describe{
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    position: relative;
+  }
+  /* top text*/
+  .topleft {
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+  }
+  /*top image*/
+  .describe> img{
+    width: 100%;
+    height: 200px;
+    opacity: 0.3;
+  }
+  
+/*ad*/
+.containerA .containerB .containerC .containerD {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+
+
+/*ad Page */
+.ad-page {
+  position: relative;
+  background-color: #FFF;
+  margin-top: 1%;
+}
+
+.ad-page .info {
+  width: 35%;
+  float: left;
+  margin-top: 130px;
+}
+
+.ad-page .info h1 {
+  font-size: 30px;
+  margin: 0  20% 0;
+  line-height: 1.4;
+  color:  rgb(33, 61, 84);
+ 
+}
+
+.ad-page .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+  margin: 0 20%;
+}
+
+.ad-page .image {
+  width: 50%;
+  float: right;
+  margin-top: 60px;
+  margin-right: 10%;
+}
+
+.ad-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-left: 10%;
+} 
+/*ad1 Page */
+.ad1-page {
+  position: relative;
+  background-color: #FFF;
+  margin-top: 1%;
+}
+
+.ad1-page .info {
+  width: 35%;
+  float: left;
+  margin-top: 130px;
+}
+
+.ad1-page .info h1 {
+  font-size: 30px;
+  margin: 0  20% 0;
+  line-height: 1.4;
+  color:  rgb(33, 61, 84);
+ 
+}
+
+.ad1-page .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+  margin: 0 0% 0 20%;
+}
+
+.ad1-page .image {
+  width: 50%;
+  float: right;
+  margin-top: 60px;
+  margin-right: 10%;
+}
+
+.ad1-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-left: 10%;
+} 
+/*clear*/
+.clearfix {
+clear: both;
+}
+
+/*button*/
+ button.apply{
+  padding: 10px 17px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #213D54;
+  color: #213D54;
+  cursor: pointer;
+  font-size: .75rem;
+  outline: none;
+  font-weight: bolder;
+ margin: 0 20% 0 ;
+ margin-bottom: 5%;
+}
+
+ button.apply:hover{
+  background-color: #213D54;
+  color:white;
+}
+
+/*media quaries*/
+@media screen and (max-width:600px){
+  /*title*/
+.h{
+  color: rgb(33, 61, 84);
+  text-align: center;
+  background-color: rgb(143, 154, 192);
+  margin-top: 5%;
+  }
+  /*title text*/
+  .topleft {
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+    height: 300px;
+    margin-left: 10%;
+  }
+    /*title image*/
+  .describe> img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.3;
+  }
+    
+  .ad-page .info p {
+    margin: 0%;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+    margin: 70 20% 0;
+    margin-left: 20%;
+
+  }
+
+  .ad1-page .info p {
+    margin: 0%;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+    margin: 70 20% 0;
+    margin-left: 20%;
+
+  }
+
+  .ad-page .image {
+  width: 80%;
+  float: none;
+  margin-top: 60px;
+
+}
+
+.ad-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20%;
+} 
+
+.ad1-page .image {
+  width: 80%;
+  float: none;
+  margin-top: 60px;
+  
+}
+
+.ad1-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20%;
+
+} 
+
+}
+
+@media screen and (max-width:1023px){
+  /*title*/
+.h{
+  color: rgb(33, 61, 84);
+  text-align: center;
+  background-color: rgb(143, 154, 192);
+  }
+  /*title text*/
+  .topleft {
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+    height: 300px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+    /*title image*/
+  .describe> img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.3;
+  }
+    
+  .ad-page .info p {
+    margin: 0%;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+    margin: 70 20% 0;
+    margin-left: 20%;
+
+  }
+
+  .ad1-page .info p {
+    margin: 0%;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+    margin: 70 20% 0;
+    margin-left: 20%;
+
+  }
+
+  .ad-page .image {
+  width: 80%;
+  float: none;
+  margin-top: 60px;
+
+}
+
+.ad-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20%;
+} 
+
+.ad1-page .image {
+  width: 80%;
+  float: none;
+  margin-top: 60px;
+  
+}
+
+.ad1-page .image img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20%;
+
+} 
+
+}
+
+
+
+
+

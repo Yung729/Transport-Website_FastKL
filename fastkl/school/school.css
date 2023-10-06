@@ -1,0 +1,58 @@
+/* heading image design */
+.img{
+    width: 58%;    
+    float: left;
+    margin-left: 2%;
+}
+
+.img img{
+    width: 85%;
+    border-radius: 30px;
+}
+
+.text h1{
+    margin-top: 14%;
+    width: 40%;
+    float: left;
+}
+
+/* description design */
+
+.description{
+    width: 85%;
+}
+
+
+.description h1,.description h2{
+    clear: both;
+    width: 100%;
+    text-align: left;
+    padding: 1% 5%;
+    text-decoration: underline;
+}
+
+.description p{
+    width: 100%;
+    text-align: justify;
+    padding: 1% 5%;
+    line-height: 2;
+}
+
+.description span{
+    text-decoration: underline;
+}
+
+.description ul {
+    width: 100%;
+    text-align: justify;
+    padding: 1% 5%;
+    line-height: 2;
+}
+
+.description ul li {
+    line-height: 2;
+    padding: 1% 0;
+}
+
+
+

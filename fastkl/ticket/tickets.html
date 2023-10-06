@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<!--
+    assignment FASTKL
+
+    Ticket Services
+    author: Soh Ching Liang
+
+    Filename:tickets.html
+    -->
+
+    <meta charset="utf-8" />
+    <title>Timetable | FASTKL</title>
+    <link href="tickets.css" rel="stylesheet" />
+    <link href="../header.css" rel="stylesheet"/>
+    <link href="../footer.css" rel="stylesheet"/>
+    <script src="../header.js" defer></script>
+</head>
+
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <section>
+
+        <article>
+            <h1 class="title">FASTKL train schedule</h1>
+
+            <p class="intro">Welcome to our FASTKL schedule. Please scroll down to have a look for each line operation hour!</p>
+
+            <img src="fast_KL.jpg" alt="LRT 3D model" class="modelTrain" />
+    
+            <table id="firstT">
+
+                <thead>
+                    <th colspan="4"><b><i>Time Schedule</i></b></th>
+                </thead>
+                    
+                <tfoot>
+                    <td colspan="4"><em>CLICK EACH FASTKL LINE FOR THE DETAIL OF &#128648 LAST TRAIN &#128648</em></td>
+                </tfoot>
+    
+                <tbody>
+    
+                    <tr id="line1">
+                        <th><a href="../lastTrain/lastTrain_1/lastT1.html"><b>FastKL Sri Petaling Line</b></th>
+                        <td><b>Monday - Friday<br>3:50 a.m. - 12:00 a.m.</b></td>
+                        <td colspan="2"><b>Saturday - Sunday<br>4:00 a.m. - 11:50 p.m.</b></td>
+                    </tr>
+        
+                    <tr id="line2">
+                        <th><a href="../lastTrain/lastTrain_2/lastT2.html"><b>FastKL KLIA Ekspres Line</b></th>
+                        <td><b>Monday - Friday<br>4:00 a.m. - 12:00 a.m.</b></td>
+                        <td colspan="2"><b>Saturday - Sunday<br>4:15 a.m. - 11:50p.m.</b></td>
+                    </tr>
+        
+                    <tr id="line3">
+                        <th><a href="../lastTrain/lastTrain_3/lastT3.html"><b>FastKL Putrajaya Line</b></th>
+                        <td><b>Monday - Friday<br>3:55 a.m. - 12:00 a.m.</b></td>
+                        <td><b>Saturday - Sunday<br>4:05 a.m. - 11:50 p.m. </b></td>
+                    </tr>
+                    
+                    <tr id="line4">
+                        <th><a href="../lastTrain/lastTrain_4/lastT4.html"><b>FastKL Klang Line</b></th>
+                        <td><b>Monday - Friday<br>4:10 a.m. - 12:00 a.m.</b></td>
+                        <td colspan="2"><b>Saturday - Sunday<br>4:20 a.m. - 11:50 p.m.</b></td>
+                    </tr>    
+    
+                </tbody>
+                
+            </table>
+
+        </article>
+
+    </section>
+
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+<!--link reference for picture  
+    
+    https://www.artstation.com/artwork/03rRAK (train model)
+    https://metromapmaker.com/ (subway map generator)

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        AACS1483 Group Assignment
+
+        Advertisement Page of FASTKL
+        Author: LEONG KAH YUNG
+        DATE: 7/8/2022
+
+        Filename: leadership.html
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../leadership/leadership.css"/>
+    <link rel="stylesheet" href="../header.css"/>
+    <link rel="stylesheet" href="../footer.css"/>
+    <script src="../leadership/leadership.js" defer></script>
+    <script src="../header.js" defer></script>
+    <title>Leadership | FastKL</title>
+</head>
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+    
+
+    <article>
+        <div class="description">
+            <h1>Leadership</h1>
+            <div class="text">
+                          
+                <h2>Meet our leadership team!!</h2>
+                <p>
+                FastKl's excellent leadership team,the leadership <br>
+                 team is organised by various talented people <br> 
+                 from the transport sector.Team members will<br>
+                 manage the day-to-day operation of the company  <br>
+                and solve day-to-day problems
+                
+                </p>
+               
+            </div>
+            <img src="source/leadership.png" alt="leadership"/>
+            
+        </div>
+
+        
+
+        <div class="team">
+            <h1 class="teamheading">Leadership Team</h1>
+            <table>
+                <tr>
+                    <td>                       
+                        <img src="source/men.png" alt="member" onclick="popup1()"/>
+                        <p class="name">Xue Ying</p>
+                        <p class="position">Chairman of FASTKl Berhad</p>                   
+                    </td>
+                    <div class="popup-content" id="content1">
+                        <img src="source/men.png" alt="member"/>
+                        <h3>Chairman of FASTKl Berhad</h3>
+                        <p>
+                            Xue Ying was established as FastKl berhad and appointed Chairman of Prasarana on 15 July 2021.
+                            John has more than 16 years of transport and logistics 
+                            experience,. Outside transport and logistics, he has also been involved in various roles, in public and private sectors, especially in education.
+                            John graduated from TARUC , Kuala Lumpur, in 2003 with a B.Sc. in transportation technology.
+                        </p>
+                        
+                        <button class="btn" onclick="closepopup1()">Close</button>
+                    </div>
+                    <td >
+                        <img src="source/women.png" alt="member" onclick="popup2()"/>
+                        <p class="name">Vanessa</p>
+                        <p class="position">Chief Executive Officer</p>
+                    </td>
+                    <div class="popup-content" id="content2">
+                        <img src="source/women.png" alt="member"/>
+                        <h3>Chief Executive Officer</h3>
+                        <p>
+                            Vanessa was a partner in setting up Fastkl with John, who became chief executive in 2021. 
+                            John graduated from TARUC , Kuala Lumpur, in 2003 with a B.Sc. in business management.  
+                        </p>
+                        
+                        <button class="btn" onclick="closepopup2()">Close</button>
+                    </div>
+                    <td>
+                        <img src="source/men1.png" alt="member"  onclick="popup3()"/>
+                        <p class="name">Michales</p>
+                        <p class="position">Chief HR Officer</p>
+                    </td>
+                    <div class="popup-content" id="content3">
+                        <img src="source/men1.png" alt="member"/>
+                        <h3>Chief HR Officer</h3>
+                        <p>
+                            Michales is an elite overseas graduate who graduated from a leading overseas university in 2010.
+                            He has deep experience in personnel management.    
+                        </p>
+                        <button class="btn" onclick="closepopup3()">Close</button>
+                    </div>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="source/men3.png" alt="member"  onclick="popup4()"/>
+                        <p class="name">Jayden</p>
+                        <p class="position">Chief Security Officer</p>
+                    </td>
+                    <div class="popup-content" id="content4">
+                        <img src="source/men3.png" alt="member"/>
+                        <h3>Chief Security Officer</h3>
+                        <p>
+                            Jayden has a Bachelor of Science in Security Management.He previously held some merit in safety management.    
+                        </p>
+                        <button class="btn" onclick="closepopup4()">Close</button>
+                    </div>
+                    <td>
+                        <img src="source/women1.png" alt="member" onclick="popup5()"/>
+                        <p class="name">Francess</p>
+                        <p class="position">Chief Information Officer</p>
+                    </td>
+                    <div class="popup-content" id="content5">
+                        <img src="source/women1.png" alt="member"/>
+                        <h3>Chief Information Officer</h3>
+                        <p>
+                            Francess is new to the elite in 2022.
+                        </p>
+                        
+                        <button class="btn" onclick="closepopup5()">Close</button>
+                    </div>
+                    <td>
+                        <img src="source/men4.png" alt="member"  onclick="popup6()"/>
+                        <p class="name">James</p>
+                        <p class="position">Chief Technology Officer</p>
+                    </td>
+                    <div class="popup-content" id="content6">
+                        <img src="source/men4.png" alt="member"/>
+                        <h3>Chief Technology Officer</h3>
+                        <p>
+                            James has up to 10 years' experience in technolgy and his team created the Fastkl website. 
+                            He graduated from TARC with bsc in data science .
+                        </p>
+                        <button class="btn" onclick="closepopup6()">Close</button>
+                    </div>
+                </tr>
+               
+            </table>
+            </div>
+
+
+              
+    </article>
+    
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+</body>
+</html>

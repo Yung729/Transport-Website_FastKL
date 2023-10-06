@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+    <!--
+    assignment FASTKL
+
+    Ticket Services
+    author: Soh Ching Liang
+
+    Filename:map.html
+    -->
+    <meta charset="utf-8" />
+    <link href="map1.css" rel="stylesheet"/> 
+    <link href="../header.css" rel="stylesheet"/>
+    <link href="../footer.css" rel="stylesheet"/>
+    <script src="../header.js" defer></script>
+    <style>img.subway{width: 1000px; height: 850px;}</style>
+    <title>Map | FASTKL</title>
+</head>
+
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">FASTKL train schedule</h1>
+    <p class="intro">Welcome to our FASTKL Map !! Please scroll down to get more information.</p>
+    <img src="map1.png" alt="" usemap="#FASTKL" class="subway" />
+    
+    <map name="FASTKL">
+    <area shape="circles" coords="266, 73, 291, 99" alt="Sri Petaling" href="../ticket/tickets.html#line1">
+    <area shape="circles" coords="549, 589, 577, 605" alt="Sri Petaling" href="../ticket/tickets.html#line1">
+
+    <area shape="circles" coords="688, 143, 717, 164" alt="KLIA Ekspres" href="../ticket/tickets.html#line2">
+    <area shape="circles" coords="492, 753, 512, 778" alt="KLIA Ekspres" href="../ticket/tickets.html#line2">
+
+    <area shape="circles" coords="401, 38, 426, 63" alt="Putrajaya" href="../ticket/tickets.html#line3">
+    <area shape="circles" coords="697, 650, 730, 676" alt="Putrajaya" href="../ticket/tickets.html#line3">
+
+    <area shape="circles" coords="589, 75, 619, 94" alt="Pelabuhan Klang" href="../ticket/tickets.html#line4">
+    <area shape="circles" coords="147, 657, 174, 675" alt="Pelabuhan Klang" href="../ticket/tickets.html#line4">
+   
+    </map>
+
+    <article>
+        <p id="hint"><strong>Click each line destination on the map to show the schedule</strong></p>
+    </article>
+
+    <table>
+        <tr>
+            <td id="line1">FastKL Laluan Sri Petaling</td>
+            <td id="line2">FastKL Laluan KLIA Ekspres</td>
+            <td id="line3">FastKL Laluan Putrajaya</td>
+            <td id="line4">FastKL Laluan Pelabuhan Klang</td>
+        </tr>
+    </table>
+
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

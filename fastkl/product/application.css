@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+td.pic {
+    
+    position: absolute;
+    left: 60%;
+    top: 35%;
+}
+
+@media only screen and (max-width: 700px) {
+    .info {
+        margin-right:15%;
+    }
+    .card-container {
+        margin-top: 20% !important;
+    }
+    td.pic {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 852px) {
+    td.pic {
+        display: none;
+     }
+}
+
+.card-container {
+    width: 100%;
+    background-color: rgb(193, 190, 190);
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(78, 10, 126, 0.19);
+    border-radius: 35px;
+    padding: 5px;
+}
+
+.card-container:hover {
+    transform: scale(0.97);
+    transition: transform 2s ease;
+}
+
+td.info {
+    width: 100%;
+    float: left;
+}
+
+#application h2 {
+    margin-left: 10%;
+}
+
+.applicationForm {
+    width: 40%;
+    margin-left: 35%;
+}
+
+table {
+ margin-left: 10%;
+}
+
+#application,h2 {
+    margin: 3%;
+}
+
+td img {
+    width:100%;  
+    margin: 5% 0 5% 0; 
+    border-radius: 30px;   
+}
+
+.pic img {
+    width: 50%;
+}
+
+
+input[type=text], input[type=select] {
+    border-radius: 10px;
+    padding: 5%;
+}
+
+input[type=submit]
+{
+    background-color: #336699;
+    color: white;
+    padding: 5% 8%;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin: 5% 3% 2% 3%;
+}
+
+input[type=submit]:hover 
+{
+    background-color: #96c4f3;
+    transform: scale(1.2);
+    transition: all 5s ease;
+} 

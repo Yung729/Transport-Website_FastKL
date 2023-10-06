@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+table{
+    color: white;
+    background-color: rgb(4, 87, 87);
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+th{
+    text-align: center;
+    color: white;
+    background-color: rgb(13, 152, 57);
+    border: 3px solid blue;
+    height: 80px;
+    font-size: large;
+}
+
+tr:nth-of-type(even) td:first-of-type{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(19, 144, 144), rgb(22, 102, 160));
+    border: 3px solid blue;
+    height: 80px;
+    font-size: large;
+}
+
+tr:first-of-type td, tr:nth-of-type(even) td:nth-of-type(2), tr:nth-of-type(even) td:nth-of-type(3), tr:nth-of-type(odd) td{
+    text-align: center;
+    color: white;
+    background-color: rgb(16, 82, 95);
+    border: 3px solid blue;
+    height: 80px;
+    font-size: large;
+}
+
+/*button style*/
+button#ticket{
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #213D54;
+    color: #213D54;
+    cursor: pointer;
+    font-size: .75rem;
+    outline: none;
+    font-weight: bolder;
+    position: relative;
+    left: 83%;
+    margin-bottom: 3%;
+}
+
+button#ticket:hover{
+    background-color: #213D54;
+    color:white;
+}

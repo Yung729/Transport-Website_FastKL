@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* fonts and font display */
+.banner h1{
+    font-size: 3.6em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.banner p{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+aside p{
+    font-size: 1.2em;
+    font-family: Consolas, monaco, monospace;
+}
+
+aside h2{
+    font-size: 1.6em;
+    font-family: Consolas, monaco, monospace;
+}
+
+h2.title{
+    font-size: 2.4em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+section h3{
+    font-size: 1.8em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+section h4{
+    font-size: 1.2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+section p,
+section li{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+aside h2,
+aside p{
+    text-align: justify;
+    text-justify: distribute;
+}
+
+section h3,
+section h4,
+section p,
+section li{
+    text-align: justify;
+    text-justify: distribute;
+}
+
+/* banner */
+.banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bannerVideo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 1;
+    filter: blur(0.5px);
+    position: relative;
+}
+
+.bannerVideo video{
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.bannerText{
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    background-color: rgba(33, 61, 84, 0.5);
+    color: #F1F5F5;
+}
+
+/* content */
+.content1{
+    margin: 30px;
+    padding: 0;
+    max-width: 100%;
+
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 300px;
+}
+
+h2.title {
+    margin: 0;
+    padding: 0 0 0 10px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: #F1F5F5;
+    background-color: #213D54;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    border: 3px solid #213D54;
+    background-color: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+section:nth-of-type(1){
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+section:nth-of-type(1){
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+section:nth-of-type(1){
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+aside{
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(33, 61, 84, 0.5);
+    color: #F1F5F5;
+    border-radius: 10px;
+
+    height: fit-content;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+/* page specific */
+.apprenticeshipText{
+    margin: 0;
+    padding: 30px;
+    border-bottom: 3px solid #213D54;
+    background-color: transparent;
+}
+
+.apprenticeshipText ul{
+    margin: 0 0 0 30px;
+}
+
+.apprenticeshipPicture{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    position: relative;
+}
+
+.apprenticeshipPicture img{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+section:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(33, 61, 84, 0.1)
+}
+
+section:hover img{
+    opacity: 0.3;
+}
+
+section:hover .applyProgram{
+    opacity: 1;
+}
+
+/* overlay */
+.applyProgram{
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #213D54;
+    color: #F1F5F5;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Arial Black";
+    outline: none;
+    font-weight: bolder;
+    text-decoration: none;
+
+
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.applyProgram:hover{
+    background-color: #F1F5F5;
+    color: #213D54;
+    border: 2px solid #213D54;
+    opacity: 1;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        AACS1483 Group Assignment
+
+       git Page of FASTKL
+        Author: PANG JUN MENG
+        DATE: 7/8/2022
+
+        Filename: git.html
+    -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="Keywords" content="Ad, ad, Advertisement,advertisement"/>
+    <link href="../git/git.css" rel="stylesheet" />
+    <link href="../header.css" rel="stylesheet" />
+    <link href="../footer.css" rel="stylesheet"/>
+    <script src="../git/git.js"></script>
+    <script src="../header.js" defer></script>
+    
+
+    <title>Get It Touch | FASTKL</title>
+
+</head>
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <article id="middle">
+        <div class="h">
+            <h1>Get In Touch<h1>
+            
+            <hr>
+
+            <p>
+            <b>
+            <em>
+                Intrigued to know more? If it's not too much trouble, give your association's contact subtleties and we will return right once again to you.
+            </em>
+            </b>   
+             </p>
+        </div>
+        <hr>
+        <div class="form-container">
+        <h1>&#9993; Contact Details</h1>
+   
+        <form  id="forms" action="../home/home.html" method="get" autocomplete="on">
+         
+            <label for="enquiry">What are you enquiry:</label><br>
+            <select id="enquiry" name="enquiry">
+                <option>Please select an enquiry</option>
+                <option value="ad">Advertisement</option>
+                <option value="tender">Tenders</option>
+            </select>
+
+            <br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"  required><br>
+
+            <label for="organization">Organization:</label><br>
+            <input type="text" id="organization" name="organization" placeholder="Enter your organization"  required><br>
+
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position" placeholder="Enter your position"  required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7,8}" placeholder="eg.01x-xxxxxxx"required><br>
+
+            <label for="office">Office Number:</label><br>
+            <input type="text" id="office" name="office" pattern="[0-9]{2}-[0-9]{7,8}" placeholder="eg.0x-xxxxxxx"required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" placeholder="eg.abcd@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$" required><br>
+
+            <label for="address">Mailing address: </label>
+            <br>
+            <textarea type="text" id="address" name="address" placeholder="Write your mailing address here" required></textarea><br>
+
+            <input class="submit" type="submit" value="Submit" onClick="JavaScript:init()">
+        </form>
+    </div>  
+   </article>    
+        
+</body>
+        
+
+
+ 
+    
+<footer>
+    
+    <div class="footer-col1">
+        <div class="col1">
+            <h3>Quick Links</h3>
+            <a href="../career/career.html">Career</a>
+            <a href="../history/history.html">History</a>
+            <a href="../contactus/contactus.html">Contact us</a>
+            <a href="../leadership/leadership.html">Leadership</a>
+        </div>
+
+        <div class="col2">
+            <h3>Service</h3>
+            <a href="../map/map.html">Map</a>
+            <a href="../product/product.html">Product</a>
+            <a href="../price/price.html">Price</a>
+            <a href="../contactus/contactus.html">Faq</a>
+        </div>  
+    </div>
+
+    <div class="col3">
+                <h3>Find Us</h3>
+        <div>
+            <ul>
+                <li>
+                    <img src="../source/location.png" alt="location"/> 
+                    No.542 Taman Indah,<br>50000 Kuala Lumpur
+                </li>
+                <li>
+                    <img src="../source/email.png" alt="email"/>                                         
+                    <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                </li>
+            </ul>
+        </div> 
+                
+    </div>
+    
+
+                
+
+    <div class="col4">
+        <h3>Follow Us</h3>
+                <div class="content">
+                    <ul>
+                        <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                        <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                        <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                        <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                    </ul>
+                </div>
+
+        </div>
+    
+    </div>
+    <div class="footer-col2">
+    <p>Copyright @ 2022 FastKl</p>
+    </div>
+</footer>
+</body>
+</html>

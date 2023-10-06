@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        AACS1483 Group Assignment
+
+        Advertisement Page of FASTKL
+        Author: LAI YONG LE
+        DATE: 7/8/2022
+
+        
+    -->
+    <meta charset="utf-8"/>
+    <link href="../header.css" rel="stylesheet"/>
+    <link href="../footer.css" rel="stylesheet"/>
+    <link href="product.css" rel="stylesheet"/>
+    <script src="../header.js" defer></script>
+    <title>Product | FASTKL</title>
+</head>
+
+<body>
+
+  <header>
+      
+    <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+    <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+    <nav class="menu" id="menu">
+    <ul>
+        <li><a href="../home/home.html">Home</a></li>
+        
+        <li><a href="../contactus/contactus.html">Contact Us</a></li>
+        <li>
+            <div class="container">
+            <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+            <ul class="submenu">
+                <li><a href="../leadership/leadership.html">Leadership</a></li>
+                <li><a href="../history/history.html">History</a></li>
+                <li><a href="../Tender/Tender.html">Tenders</a></li>
+                <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+            </ul>
+            </div>
+        </li>
+        <li>
+            <div class="container">
+            <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+            <ul class="submenu">
+                <li><a href="../map/map.html">Map</a></li>
+                <li><a href="../ticket/tickets.html">Timetable</a></li>
+                <li><a href="../price/price.html">Price</a></li>
+                <li><a href="../product/product.html">Product</a></li>
+            </ul>   
+            </div>            
+        </li>
+        <li>
+            <div class="container">
+            <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+            <ul class="submenu">
+                <li><a href="../career/career.html">Work</a></li>
+                <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+            </ul>
+            </div>
+        </li>
+        <li>
+            <div id="loginStatus"  style="display:inline">
+            <a href="../login/user_login.html" class="login">Login</a>
+            </div>
+            <img src="../source/user.png" alt="user" class="login">
+        </li>
+    </ul>
+    </nav>
+</header>
+    
+    <div class="description">
+    <h1>Products</h1>
+      <div class="paragraph">
+        <p>It's our honour to introduce our products</p>
+        <p>to anyone who supports us. Our products bring</p>
+        <p>benefits to every single inviduals out there.</p><br>
+        <p>Don&apos;t miss out!!! &emsp; &#10095;  . &#10094;  </p><br>
+        <p>&#9829; Following are the products provided:</p>
+      </div>
+    </div>
+      
+    <div class="card-container">
+
+      <div class="tab">
+        <button class="tablinks" id="defaultOpen" onclick="openCard(event, 'specialCard')">SPECIAL CARD</button>
+        <button class="tablinks" onclick="openCard(event, 'subsCard')">SUBSCRIPTION CARD</button>
+      </div>
+        
+
+      <div id="specialCard" class="tabcontent">
+        <h2>SPECIAL CARDS</h2>
+        <ul class="card-list">
+
+          <li class="firstColumn">
+            <ul class="card-wrapper">
+
+              <li data-type="special">
+                <div class="card-1">
+                <header class="card-header">
+                  <h2>Student</h2>
+                  <div class="discount">
+                    <span class="value">40</span>
+                    <span class="percentage">%</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <ul class="card-features">
+                    <li><em>no</em> age restriction</li>
+                    <li><em>only</em> for students</li>
+                  </ul>
+                </div>  
+
+                <footer class="card-footer">
+                  <a class="select" href="sc_application.html">Apply Now</a>
+                </footer>
+
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="secondColumn"> 
+            <ul class="card-wrapper">
+              <div class="card-2">
+
+                <header class="card-header">
+                  <h2>Gov. worker</h2>
+                  <div class="discount"> 
+                    <span class="value">40</span>
+                    <span class="percentage">%</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <ul class="card-features">
+                    <li><em>no</em> age restriction</li>
+                    <li><em>must</em> be a government worker</li>
+                  </ul>
+                </div>
+
+                <footer class="card-footer">
+                  <a class="select" href="govc_application.html">Apply Now</a>
+                </footer>
+
+              </div>
+            </ul>
+          </li>
+
+          <li class="thirdColumn"> 
+            <ul class="card-wrapper">
+              <div class="card-3">
+
+                <header class="card-header">
+                  <h2>Senior Citizen</h2>
+                  <div class="discount">
+                    <span class="value">65</span>
+                    <span class="percentage">%</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <ul class="card-features">
+                    <li><em>60</em> years old and above</li>
+                    <li><em>don&apos;t</em> need to line up</li>
+                    <li>qualify for <em>special seats</em></li>
+                  </ul>
+                </div>
+
+                <footer class="card-footer">
+                  <a class="select" href="scc_application.html">Apply Now</a>
+                </footer>
+
+                </div> 
+            </ul>
+          </li>
+
+        <li class="fourthColumn"> 
+            <ul class="card-wrapper">
+                <div class="card-4">
+                  
+                <header class="card-header">
+                  <h2>OKU</h2>
+                  <div class="discount">
+                      <span class="value">70</span>
+                      <span class="percentage">%</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <ul class="card-features">
+                      <li><em>no</em> age restriction</li>
+                      <li><em>don&apos;t</em> need to line up</li>
+                      <li>qualify for <em>special seats/areas</em></li>
+                  </ul>
+                </div>
+
+                <footer class="card-footer">
+                  <a class="select" href="okuc_application.html">Apply Now</a>
+                </footer>
+
+                </div>
+              </ul> 
+              </li>
+            </ul>
+      </div>
+
+
+
+        <div id="subsCard" class="tabcontent">
+          <h2>SUBSCRIPTION CARDS</h2>
+          <ul class="card-list">
+
+              <li class="firstCard">
+                <header class="card-header">
+                  <h2>Monthly Card</h2>
+                  <div class="discount">
+                    <span class="value">50</span>
+                    <span class="percentage">%</span>
+                  </div>
+                </header>
+                <div class="card-body">
+                  <ul class="card-features">
+                    <li><em>free</em> to acess WiFi</li>
+                    <li>enjoy <em>20%</em> discount for food</li>
+                    <li>qualify for <em>small</em> private seats</li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <a class="select" href="payment_mc.html">Apply Now</a>
+                </footer>
+              </li>
+            
+        
+          
+            <li class="secondCard">
+              <header class="card-header">
+                <h2>Annual Card</h2>
+                <div class="discount">
+                  <span class="value">85</span>
+                  <span class="percentage">%</span>
+                </div>
+              </header>
+
+              <div class="card-body">
+                <ul class="card-features">
+                  <li><em>free</em> to acess WiFi </li>
+                  <li>enjoy <em>60%</em> discount for food</li>
+                  <li>qualify for <em>huge</em> private seats</li>
+                </ul>
+              </div>
+
+              <footer class="card-footer">
+                <a class="select" href="payment_ac.html">Apply Now</a>
+              </footer>
+            </li>
+          
+          </ul>
+      
+      </div>
+    </div>
+
+    <footer>
+    
+      <div class="footer-col1">
+          <div class="col1">
+              <h3>Quick Links</h3>
+              <a href="../career/career.html">Career</a>
+              <a href="../history/history.html">History</a>
+              <a href="../contactus/contactus.html">Contact us</a>
+              <a href="../leadership/leadership.html">Leadership</a>
+          </div>
+
+          <div class="col2">
+              <h3>Service</h3>
+              <a href="../map/map.html">Map</a>
+              <a href="../product/product.html">Product</a>
+              <a href="../price/price.html">Price</a>
+              <a href="../contactus/contactus.html">Faq</a>
+          </div>  
+      </div>
+
+      <div class="col3">
+                  <h3>Find Us</h3>
+          <div>
+              <ul>
+                  <li>
+                      <img src="../source/location.png" alt="location"/> 
+                      No.542 Taman Indah,<br>50000 Kuala Lumpur
+                  </li>
+                  <li>
+                      <img src="../source/email.png" alt="email"/>                                         
+                      <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                  </li>
+              </ul>
+          </div> 
+                  
+      </div>
+      
+
+                  
+
+      <div class="col4">
+          <h3>Follow Us</h3>
+                  <div class="content">
+                      <ul>
+                          <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                          <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                          <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                          <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                      </ul>
+                  </div>
+
+          </div>
+      
+      </div>
+      <div class="footer-col2">
+      <p>Copyright @ 2022 FastKl</p>
+      </div>
+  </footer>
+    <script>
+      function openCard(evt, cardName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cardName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+    
+    
+</body>
+</html>
+

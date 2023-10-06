@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.mascot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    animation-name: mascot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    z-index: 99;
+}
+
+.mascot:hover{
+    animation-name: none;
+}
+
+@keyframes mascot {
+    0%   {
+        transform: scale(1,1);
+        bottom: 20px;}
+    7%  {
+        transform: scale(1.1,.9);
+        bottom: 20px;}
+    23%  {
+        transform: scale(.9,1.1);
+        bottom: 120px;}
+    38%  {
+        transform: scale(1,1);
+        bottom: 20px;}
+    42%  {
+        transform: scale(1,1);
+        bottom: 27px;}
+    48%  {
+        transform: scale(1,1);
+        bottom: 20px;}
+    75% {
+        transform: scale(1,1);
+        bottom: 20px;}
+    100% {
+        transform: scale(1,1);
+        bottom: 20px;}
+}

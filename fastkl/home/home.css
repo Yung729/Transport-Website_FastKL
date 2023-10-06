@@ -1,0 +1,421 @@
+body
+{
+    width: 100%;
+    height: auto;
+
+}
+
+/*Slideshow*/
+.slideshow-container
+{
+    float: right;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides
+{
+    width: 100%;
+    display: none;
+}
+
+.mySlides img
+{
+    display: block;
+    float: right;
+    width: 80%;
+    height: 500px;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 5% 1% ;
+    border-radius: 30px;
+    animation-name: rightslide;
+    animation-duration: 0.8s;
+}
+
+
+.mySlides img:hover
+{
+    transition: all .20s ease;
+    transform: scale(0.99);
+}
+
+.text 
+{
+    float: left;
+    width: 30%;
+    height: 20px;
+    line-height: 50px;
+    padding-top: 15%;
+    padding-left: 2%;
+    display: block;
+    color: #213D54;
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: bolder;   
+    text-align: left;
+    animation-name: leftslide;
+    animation-duration: 0.8s;
+}
+
+.text button{
+    margin-top: 4%;
+    background-color: transparent;
+    padding: 2% 3%;
+    border-radius: 12px;
+    border: 3px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.text button:hover{
+    background-color: #213D54;
+    color:white;
+}
+
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+  
+/*information table*/
+
+.info-container{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1%;
+}
+
+[class^="info"]{
+    box-sizing: border-box;
+}
+
+[class^="info"] [class^="message"]{
+    width: 100%;
+    padding: 5px;
+}
+
+.info1{
+    width: 50%;
+    float: left;
+    display: table;
+}
+
+.info2{
+    width: 50%;
+    float: left;
+    display: table;
+}
+
+[class^="info"] table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+
+
+.info1 th,.info1 td{
+    text-align: left;
+    padding: 17px;
+}
+
+.info2 th,.info2 td{
+    text-align: center;
+    padding: 16px;
+}
+
+.info2 td{
+    border: 2px black solid;
+}
+
+.info1 tr:nth-of-type(even){
+    background-color: #213D54;
+    color: white;
+}
+
+.info2 tr:nth-of-type(odd){
+    background-color: #213D54;
+    color: white;
+}
+
+[class^="message"] th{
+    background-color: #213D54;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+[class^="info"] table{
+    border: 2px solid black;
+    
+}
+
+
+/*poster link*/
+.service-container{
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+
+}
+
+.service-container td{
+    text-align: center;
+    padding: 3% 5%;
+}
+
+[class^="pcard"]{
+    width: 100%;
+    height: 400px;
+    max-width: 500px;
+    background-color: #000;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+[class^="pcard"]:hover{
+    transform: scale(.925);
+}
+
+[class^="pcard"]:hover [class^="poster-text"]  p{
+    margin-bottom:0;
+    opacity: 1;
+}
+
+[class^="pcard"]:hover img{
+    transform: scale(1.2);
+}
+
+[class^="pcard"]::after{
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg,rgba(0,0,0,0,)0%,rgba(0,0,0,1)100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+[class^="pcard"] img{   
+    width: 100%; 
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+
+[class^="pcard"] [class^="poster-text"]{
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    font-weight: bolder;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 100%;  
+}
+
+[class^="pcard"] .poster-text1{
+    color: black;
+}
+
+[class^="pcard"] .poster-text2{
+    color: rgb(58, 48, 27);
+}
+
+[class^="pcard"] .poster-text3{
+    color: rgb(200, 89, 89);
+}
+
+[class^="pcard"] .poster-text4{
+    color: black;
+}
+
+[class^="pcard"] [class^="poster-text"] p {
+    font-size: -8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+[class^="pcard"] [class^="poster-text"] button{
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: white;
+    border: 3px solid rgb(109, 87, 87);
+    color: rgb(50, 50, 144);
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-size: .75rem;
+    outline: none;
+}
+
+[class^="pcard"] [class^="poster-text"] button:hover{
+    background-color: #2e6086;
+    color: aliceblue;
+}
+
+
+
+.pcard1{
+    width: 50%;
+    float: left;
+}
+
+.pcard2{
+    width: 50%;
+    float: right;
+}
+
+.pcard3{
+    width: 50%;
+    float: left;
+}
+
+.decription1,.decription3{
+    color: rgb(63, 103, 133);
+    width: 50%;
+    float: left;
+    padding-top: 5%;
+    padding-left: 10%;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.55;
+}
+
+.pcard4{
+    width: 50%;
+    float: right;
+}
+
+.decription4,.decription2{
+    color: rgb(63, 103, 133);
+    width: 50%;
+    float: right;
+    padding-top: 5%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.55;
+}
+
+[class^="decription"] h3{
+    animation: type 3s steps(24) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(64, 62, 62);
+    font-weight: bolder;
+}
+
+/*phone version*/
+@media screen and (max-width: 700px) {    
+  
+    .service-container tr {
+        width: 100%;
+        clear: both;
+      float: none;
+      text-align: left;
+      display: block;
+    }
+
+    .service-container th {
+        width: 100%;
+        clear: both;
+      float: none;
+      text-align: left;
+      display: block;
+    }
+
+    .service-container td {
+        width: 100%;
+        clear: both;
+      float: none;
+      text-align: left;
+      display: block;
+    }
+    
+    .slideshow-container .text p{
+        font-size: 0.5em;
+        
+    }
+
+    .slideshow-container img{
+        height: 100%;
+    }
+
+    .slideshow-container .text button{
+        width: 60%;
+        margin-bottom: 5%;
+    }
+
+    .info1,.info2{
+        padding-bottom: 2%;
+        display: block;
+        width: 100%;
+    }
+
+    .info-container{
+        height: 800px;
+    }
+
+
+    [class^="decription"]{
+        display: none;
+    }
+
+    [class^="pcard"]{
+       width: 100%;
+    }
+  }
+
+/* animation */
+
+
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+  @keyframes leftslide {
+    from {transform: translateX(-700px);}
+    to {transform: translateX(0px);}
+  }
+  
+  @keyframes rightslide {
+    from {transform: translateX(550px);}
+    to {transform: translateX(0px);}
+  }
+
+  @keyframes type {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+  }

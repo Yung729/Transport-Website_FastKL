@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<!--
+    assignment FASTKL
+
+    Ticket Services
+    author: Soh Ching Liang
+
+    Filename:price.html
+    -->
+    <meta charset="utf-8" />
+    <link href="price.css" rel="stylesheet" />
+    <link href="../header.css" rel="stylesheet"/>
+    <link href="../footer.css" rel="stylesheet"/>
+    <script src="../header.js" defer></script>
+
+    <title>Price | FastKL</title>
+</head>
+
+<body> 
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+    
+    <section>
+
+        <h1 id="titlePrice"><b>FASTKL Ticket price</b></h1>
+
+        <article id="introPrice">
+            <i>FASTKL Train reach every 15 minutes start from the operation time from Monday to Sunday. Its prices is counted by how long 
+            the distances between the station by station. These prices is reasonable for everyone. Lastly, FASTKL train is free for
+            everyone during public holiday and its operation hour is 24 hours!</i>
+        </article>
+
+        <table class="price">
+            <tr>
+                <td>FASTKL Lines</td>
+                <td colspan="5">Price</td>
+            </tr>
+
+            <tr>
+                <td><i>FastKL Sri Petaling Line</i></td>
+                <td>Sentul Timur to Kuala Mas - <br>RM 3.50</td>
+                <td>Kuala Mas to Berangan Enam - <br>RM1.00</td>
+                <td>Berangan Enam to Seri Mawar - <br>RM1.50</td>
+                <td>Seri Mawar to Tengkoh Jaya - <br>RM2.00</td>
+                <td>Tengkoh Jaya to Putra Heights - <br>RM2.60 </td>
+            </tr>
+
+            <tr>
+                <td><i>FastKL KLIA Ekspres Line</i></td>
+                <td>KL Sentral to Seri Mawar - <br>RM3.00</td>
+                <td>Seri Mawar to Suluh Klang - <br>RM0.80</td>
+                <td>Suluh Klang to Jalan OKU - <br>RM1.10</td>
+                <td>Jalan OKU to Seri Rampai - <br>RM2.40</td>
+                <td>Seri Rampai to KLIA 2 - <br>RM3.60</td>
+            </tr>
+
+            <tr>
+                <td><i>FastKL Putrajaya Line</i></td>
+                <td>Kwasa Damansara to Kuala Mas - <br>RM1.80</td>
+                <td>Kuala Mas to Jalan OKU - <br>RM0.80</td>
+                <td>Jalan OKU to Taipeng - <br>RM1.40</td>
+                <td>Taipeng to Tengkoh Jaya - <br>RM0.70</td>
+                <td>Tengkoh Jaya to Putrajaya Sentral - <br>RM2.30</td>
+            </tr>
+           
+            <tr>
+                <td><i>FastKL Klang Line</i></td>
+                <td>Pelabuhan Klang to Seri Rampai - <br>RM2.10</td>
+                <td>Seri Rampai to Taipeng - <br>RM1.90</td>
+                <td>Taipeng to Suluh Klang - <br>RM1.20</td>
+                <td>Suluh Klang to Berangan Enam - <br>RM0.80</td>
+                <td>Berangan Enam to Tanjung Malim - <br>RM1.70</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+
+</body>

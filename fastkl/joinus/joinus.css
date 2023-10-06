@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+
+/* fonts and font display */
+.banner h1{
+    font-size: 3.6em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.banner p{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.mainContent h2{
+    font-size: 2.4em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainContent h3{
+    font-size: 2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainContent p,
+.mainContent label,
+.mainContent input,
+.mainContent select,
+.mainContent option,
+.mainContent textarea,
+.mainContent ul,
+.mainContent ol,
+.mainContent li{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/* banner */
+.banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bannerVideo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 1;
+    filter: blur(0.5px);
+    position: relative;
+}
+
+.bannerVideo video{
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.bannerText{
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    background-color: rgba(33, 61, 84, 0.5);
+    color: #F1F5F5;
+}
+
+/* content */
+.mainContent{
+    margin: 30px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.mainContent h2{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: #F1F5F5;
+    background-color: #213D54;
+}
+
+.gap{
+    margin: 30px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* page specific */
+
+form{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* applicationType */
+.applicationType div{
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.applicationType label[for="jobApplicationList"],
+.applicationType label[for="apprenticeshipList"]{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: inline-block;
+}
+
+.applicationType #jobApplicationList,
+.applicationType #apprenticeshipList{
+    margin: 0;
+    padding: 0;
+    width: 78%;
+    display: inline-block;
+}
+
+.applicationType select{
+    margin: 0;
+    padding: 0;
+    width: 78%;
+    display: inline-block;
+}
+
+/* personalInformation */
+.personalInformation div{
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.personalInformation label{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: inline-block;
+}
+
+.personalInformation label[for="permanentAddress"],
+.personalInformation label[for="mailingAddress"]{
+    display: inline-block;
+    position: relative;
+    bottom: 3.9em;
+}
+
+.personalInformation #fullName,
+.personalInformation #nric,
+.personalInformation #dateOfBirth,
+.personalInformation #gender,
+.personalInformation #maritalStatus,
+.personalInformation #email,
+.personalInformation #handphoneNumber,
+.personalInformation #homeTelephoneNumber,
+.personalInformation #highestEducationLevel,
+.personalInformation #yearsOfExperience{
+    margin: 0;
+    padding: 0;
+    width: 78%;
+    display: inline-block;
+}
+
+.personalInformation textarea{
+    margin: 0;
+    padding: 0;
+    width: 78%;
+    display: inline-block;
+    height: 4.8em;
+}
+
+.personalInformation p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+input#submit{
+    margin: 30px 0 0 0;
+    padding: 0;
+    height: 50px;
+    width: 200px;
+    left: 30px;
+ }
+
+input:focus,
+select:focus,
+textarea:focus{
+    background-color: rgb(168, 221, 228);
+}
+
+input#nric:focus:invalid,
+input#handphoneNumber:focus:invalid,
+input#homeTelephoneNumber:focus:invalid,
+input#email:focus:invalid{
+    background: rgb(255, 143, 143);
+}

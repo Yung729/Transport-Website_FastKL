@@ -1,0 +1,92 @@
+footer{
+    background-color: #dbe0e0;
+    color: black;
+    display: relative;
+    clear: both;
+}
+
+div[class^="col"]{
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+[class^="col"] h3{
+    text-align: center;
+}
+
+.col3 img{
+    width: 10%;    
+}
+
+.col4 img{
+    width: 25%;
+}
+
+.col3 img{
+    float: left;
+}
+
+[class^="col"] a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+[class^="col"] a:hover{
+    color: rgb(144, 140, 140);
+    text-decoration: underline;
+}
+
+.col1 a,.col2 a {
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.col3 ul,.col4 ul{
+    list-style-type: none;
+}
+
+.col3 li,.col4 li{
+    margin-top: 5%;
+}
+
+.col4 li {
+    float: left;
+    width: 50%;
+}
+
+.col3 p{
+    text-align: center;
+}
+
+.col3 a{
+    text-align: center;
+}
+
+.col3,.col4{
+    text-align: center;
+}
+
+
+
+.footer-col2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 700px) {    
+
+    div[class^="col"]{
+        margin-bottom: 2%;
+        height: auto;
+        width: 100%;
+    }
+
+
+}
+
+

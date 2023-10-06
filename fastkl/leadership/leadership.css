@@ -1,0 +1,163 @@
+
+/*Top*/
+.description
+{
+    display: block;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.description h1 
+{
+    width: 100%;
+    margin: 2% 0 1% 0;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text
+{
+    width: 60%;
+    float: left;
+    letter-spacing: 1.2px;
+    padding-left: 5%;
+}
+
+
+.text h2
+{
+    margin: 2% 0 1% 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text p{
+    padding-top: 2%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.description img
+{
+    float: left;
+    width: 40%;
+    height:300px;
+    padding-right: 3%;
+}
+
+/*Member*/
+
+.team{
+    width: 100%;
+    padding: 2% 15%;
+    display: table;
+}
+
+
+h1.teamheading
+{
+    display: block;
+    margin: 5%;
+    height: auto;
+}
+
+.team td{
+    float: left;
+    width: 33.33%;
+    padding: 0 5%;
+}
+
+.team img
+{
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.team img:hover
+{
+    transition: all .20s ease;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+p.name 
+{   
+    font-size: 110%;
+    font-weight: 850;
+    color: black;
+}
+
+p.position
+{
+    color: red;
+}
+
+.team p
+{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*POPUP*/
+.popup-content{
+    background-color: aliceblue;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 54%;
+    margin: 5% 10%;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(5, 31, 110, 0.2), 0 6px 20px 0 rgba(28, 25, 30, 0.19);
+}
+
+.popup-content img{
+    margin-top: 1%;
+    width: 20%;  
+    border-radius: 20px;
+}
+
+.popup-content h3{
+    color: red;
+    font-weight: bolder;
+}
+
+.popup-content p{
+    text-align: justify;  
+}
+
+.btn{
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #213D54;
+    color: #213D54;
+    cursor: pointer;
+    font-size: .75rem;
+    outline: none;
+    font-weight: bolder;
+    margin-top: auto;
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
+
+button:hover{
+    background-color: #213D54;
+    color:white;
+}
+
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+

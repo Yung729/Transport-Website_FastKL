@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*image stle*/
+img.subway{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 15%;
+    box-shadow: rgb(166, 149, 166) 0 0 30px;
+}
+
+/*Paragraph style*/
+
+h1.title{
+    font-size: 25px;
+    color: #3d156c;
+    text-shadow: 1px 1px #615a6a;
+    margin: 3% 10%;
+}
+
+p.intro {
+    color: black;
+    text-align: justify;
+    margin: 3% 10%;
+}
+
+article p#hint{
+    color: rgba(38, 47, 97, 0.663);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+}
+
+/*table style*/
+#line1{
+    color :white;
+    background-color:rgb(102, 44, 144);
+}
+#line2{
+    color :white;
+    background-color: rgb(208, 97, 37);
+}
+#line3{
+    color :white;
+    background-color: rgb(0, 235, 27);
+}
+#line4{
+    color :white;
+    background-color: rgb(0, 0, 0);
+}
+
+/*table position*/
+table {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    border-spacing: 30px;
+    margin: auto;
+}
+
+
+
+
+

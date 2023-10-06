@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+<head>
+    <!--
+    assignment FASTKL
+
+    Ticket Services
+    author: Soh Ching Liang
+
+    Filename:lastT3.html
+    -->
+    <link href="lastT3.css" rel="stylesheet" />
+    <link href="../../header.css" rel="stylesheet"/>
+    <link href="../../footer.css" rel="stylesheet"/>
+    <script src="../../header.js" defer></script>
+
+    <title>Putrajaya Line | FastKL</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../home/home.html" class="logo-container"><img class="logo" src="../../source/logo.png" alt="logo" ></a>
+        <img src="../../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu">
+        <ul>
+            <li><a href="../../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../../history/history.html">History</a></li>
+                    <li><a href="../../Tender/Tender.html">Tender</a></li>
+                    <li><a href="../../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../../map/map.html">Map</a></li>
+                    <li><a href="../../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../../price/price.html">Price</a></li>
+                    <li><a href="../../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../../career/career.html">Work</a></li>
+                    <li><a href="../../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <article>
+
+        <table>
+            <thead>
+                <th colspan="3">FastKL Putrajaya Line</th>
+            </thead>
+    
+            <tbody>
+    
+                <tr>
+                    <td>Station</td>
+                    <td>Monday - Friday</td>
+                    <td>Saturday - Sunday</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="2">Kwasa Damansara</td>
+                    <td>Operating hour - <br>3:55 a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:05 a.m. - 11:50 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td>last train - <br>12:05 a.m.</td>
+                    <td>last train - <br>11:54 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Kuala Mas</td>
+                    <td>Operating hour - <br>3:50 a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:00 a.m. - 11:50 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td>last train - <br>12:05 a.m.</td>
+                    <td>last train - <br>11:55 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Jalan OKU</td>
+                    <td>Operating hour - <br>4:00a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:15 a.m. - 11:50 p.m.</td>
+                </tr>
+                
+                <tr>
+                    <td>last train - <br>12:05 a.m.</td>
+                    <td>last train - <br>11:56 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Taipeng</td>
+                    <td>Operating hour - <br>3:55 a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:05 a.m. - 11:50 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td>last train - <br>12:04 a.m.</td>
+                    <td>last train - <br>11:54 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Tengkoh Jaya</td>
+                    <td>Operating hour - <br>3:50 a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:00 a.m. - 11:50 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td>last train - <br>12:05 a.m.</td>
+                    <td>last train - <br>11:56 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Putrajaya Sentral</td>
+                    <td>Operating hour - <br>3:55 a.m. - 12:00 a.m.</td>
+                    <td>Operating hour - <br>4:05 a.m. - 11:50 p.m.</td>
+                </tr>
+
+                <tr>
+                    <td>last train - <br>12:07 a.m.</td>
+                    <td>last train - <br>11:55 p.m.</td>
+                </tr>
+    
+            </tbody>
+        </table>
+
+        <button id="ticket" onclick="lastTrain()">Price</button>
+
+            <script>
+                function lastTrain(){
+                    document.location.href="../../price/price.html";
+                }
+            </script>
+            
+    </article>
+
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../../career/career.html">Career</a>
+                <a href="../../history/history.html">History</a>
+                <a href="../../contactus/contactus.html">Contact us</a>
+                <a href="../../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../../map/map.html">Map</a>
+                <a href="../../product/product.html">Product</a>
+                <a href="../../price/price.html">Price</a>
+                <a href="../../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        AACS1483 Group Assignment
+
+        Advertisement Page of FASTKL
+        Author: LEONG KAH YUNG
+        DATE: 7/8/2022
+
+        Filename: contactus.html
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contactus/contactus.css"/>
+    <link rel="stylesheet" href="../header.css"/>
+    <link rel="stylesheet" href="../footer.css"/>
+    <script src="../contactus/contactus.js" defer></script>
+    <script src="../header.js" defer></script>
+    <title>Contact Us | FastKL</title>
+</head>
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+    
+    <section>
+        
+        <div class="container1">
+            <h1>Contact us</h1>
+        <div class="form-container">
+            
+                <h2>Feedback Form</h2>
+                <form  id="contactusform" name="contactusform" action="../home/home.html" method="get" autocomplete="off" onsubmit="return checkvalid()">
+                    <h3>Any questions you can tell us about?</h3>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" ><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="eg.abcd@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ><br>
+                    <label for="contact">Phone Number:</label><br>
+                    <input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{7,8}" placeholder="eg.01x-xxxxxxx"><br>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option>Please select a subject</option>
+                        <option value="suggect">Suggection</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="enquiry">Enquiry</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <br>
+                    <label for="message">Leave your message here:</label><br>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea><br>
+                    <input type="checkbox" id="getinfo" name="getinfo"/>
+                    <label for="getinfo" >Send Me A Copied Email</label><br><br>
+                    <input type="submit" value="submit">
+                </form>
+        </div>
+        
+        <div class="faq">
+        <h1>FAQ </h1>      
+            <div class="faqBox-travel">           
+              <button onclick="showMore_travel()"><h2>Travel</h2><img src="source/dropdown.png" alt="v" id="dropdown-icon"/></button>
+              <span id="travelContent"></span>
+              <div class="question-box" id="questionTravel"></div>
+                <ul>
+                    <li class="question" id="messageTravel">
+                        <b>How to travel with our services</b>
+                        <p>Our rail services operate all days from 6am to 12am. 
+                            Rush hour on weekdays range from 7am to 9am and 5pm to 7pm.
+                            Depending on where you are heading, You can plan your departure and arrival times 
+                            by referring to our express rail timetable in timetable webpage. 
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th>Rail line</th>
+                                <th>Duration</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Sri Petaling</td>
+                                <td>Every 5 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Klia</td>
+                                <td>Every 6 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Putrajaya</td>
+                                <td>Every 4 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Klang</td>
+                                <td>Every 5 minutes</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="faqBox-pass">           
+                <button onclick="showMore_pass()"><h2>Pass</h2><img src="source/dropdown.png" alt="v" id="dropdown-icon1"/></button>
+                <span id="passContent"></span>
+                <div class="question-box" id="questionPass"></div>
+                  <ul>
+                      <li class="question" id="messagePass">
+                          <b>How to travel to low cost</b>
+                          <p>Our company are promote a promotion that is can purchase the monthly card or register a student card
+                             to get more discount.
+                          </p>
+
+                          <table>
+                            <tr>
+                                <th>Product</th>
+                                <th>Benefit</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Student</td>
+                                <td>Up to 40% discount</td>
+                            </tr>
+                            <tr>
+                                <td>Worker</td>
+                                <td>Up to 40% discount</td>
+                            </tr>
+                            <tr>
+                                <td>Senior citizen</td>
+                                <td>Up to 65% discount</td>
+                            </tr>
+                            <tr>
+                                <td>OKU</td>
+                                <td>Up to 70% discount</td>
+                            </tr>
+                        </table>
+
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="faqBox-map">           
+                <button onclick="showMore_map()"><h2>Map</h2><img src="source/dropdown.png" alt="v" id="dropdown-icon2"/></button>
+                <span id="mapContent"></span>
+                <div class="question-box" id="questionMap"></div>
+                  <ul>
+                      <li class="question" id="messageMap">
+                          <b>How to know travel line</b>
+                          <p>Users can click on the map link in the 
+                            service or on the image link below to see 
+                            our map routes for easier and more efficient 
+                            route planning.
+                          </p>
+
+                          <div class="pic">
+                            <img src="source/map.webp" alt="map" >
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="faqBox-cash">           
+                <button onclick="showMore_cash()"><h2>Cashless</h2><img src="source/dropdown.png" alt="v" id="dropdown-icon3"/></button>
+                <span id="cashContent"></span>
+                <div class="question-box" id="questioncash"></div>
+                  <ul>
+                      <li class="question" id="messageCash">
+                          <b>Way to pay by cashless service</b>
+                          <p>User can purchase a card be a pass to use for lrt service
+                             or can pay by Tngo application when need to use lrt service
+                          </p>
+                          <br>
+                          <p>
+                            Cashless payments can also avoid the spread of covid19
+                          </p>
+
+                          <div class="pic">
+                            <img src="source/tng.jpeg" alt="touch and go" >
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+            
+
+        </div>
+        
+        </div>
+    </section>
+    
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+</body>
+</html>

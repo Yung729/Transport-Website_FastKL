@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+
+/* fonts and font display */
+.banner h1{
+    font-size: 3.6em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.banner p{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h2.title{
+    font-size: 2.4em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainContent h3{
+    font-size: 1.8em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainContent h4{
+    font-size: 1.2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.mainContent p,
+.mainContent li{
+    font-size: 1.2em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/* banner */
+.banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bannerVideo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 1;
+    filter: blur(0.5px);
+    position: relative;
+}
+
+.bannerVideo video{
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.bannerText{
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    background-color: rgba(33, 61, 84, 0.5);
+    color: #F1F5F5;
+}
+
+/* content */
+.mainContent{
+    margin: 30px;
+    padding: 0;
+    max-width: 100%;
+}
+
+h2.title{
+    margin: 30px 30px 0 30px;
+    padding: 0 0 0 10px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: #F1F5F5;
+    background-color: #213D54;
+}
+
+.gap{
+    margin: 30px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* page specific */
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.career{
+    margin: 0;
+    padding: 0;
+    border: 3px solid #213D54;
+    background-color: transparent;
+    border-radius: 30px;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    max-width: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidegap{
+    margin: 0 20px 0 0;
+    padding: 0;
+    height: 100%;
+}
+
+.career:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(33, 61, 84, 0.1)
+}
+
+.careerText{
+    margin: 0;
+    padding: 30px;
+    border-bottom: 3px solid #213D54;
+    background-color: transparent;
+}
+
+.careerText h3,
+.careerText h4,
+.careerText p,
+.careerText li{
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.careerText ul{
+    margin: 0 0 0 30px;
+}
+
+.careerText ol{
+    margin: 0 0 0 30px;
+}
+
+.careerPicture {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.careerPicture img{
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: all 0.2s ease-in-out;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.career:hover img{
+    filter: blur(2px);
+    transform: scale(1.5);
+}
+
+.joinus{
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #213D54;
+    color: #F1F5F5;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Arial Black";
+    outline: none;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 3;
+}
+
+.joinus:hover{
+    background-color: #F1F5F5;
+    color: #213D54;
+    border: 2px solid #213D54;
+}

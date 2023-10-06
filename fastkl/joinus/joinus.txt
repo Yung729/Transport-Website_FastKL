@@ -1,0 +1,40 @@
+<div class="banner">
+    <div class="title"></div>
+    <div class="description"></div>
+</div>
+
+Join our team today and make a positive difference for the community. Fill and submit the following appication form and we will get back to you.
+
+Employment Application
+
+Position Applied
+Full Name
+Nationality
+NRIC / Passport Number
+Date of Birth
+Gender
+Marital Status
+Permanent Address
+Mailing Address
+Email
+Handphone Number
+Home Telephone Number
+Highest Education Level
+Experience
+Supporting Documents
+
+Please compile and submit all supporting documents in a single '.pdf' file of 100mb or less in size.
+
+<div class="button">CHOOSE FILE</div>
+
+Resume or Curriculum Vitae
+
+Please submit your resume and/or curriculum vitae (C.V.) in a single '.pdf' file of 10mb or less in size.
+
+<div class="button">CHOOSE FILE</div>
+
+Declaration
+
+I hereby acknowledge...
+
+<div class="button">I HAVE AGREE TO THE TERMS AND CONDITIONS. SUBMIT MY APPLICATION</div>

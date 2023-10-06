@@ -1,0 +1,132 @@
+
+/*font*/
+
+  article {
+    font-family: 
+    myFirstFont;
+  }
+
+    /*title*/
+    .h{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(33, 61, 84);
+        text-align: center;
+        background-color: rgb(143, 154, 192);
+        }
+        
+        /*title description*/
+        .describe{
+          text-align: center;
+          background-color: whitesmoke;
+          font-family: 'Times New Roman', Times, serif;
+          color: black;
+          position: relative;
+        }
+        .describe> img{
+          width: 100%;
+          height: 200px;
+          opacity: 0.5;
+        }
+/*top text*/
+.topleft {
+    position: absolute;
+    top: 50px;
+    left: 1px;
+    right: 1px;
+    font-size: 20px;
+  }
+
+ 
+/*TENDERS*/
+.container1{
+width: 90%;
+margin: 50px auto;
+}
+
+.row{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-flow: wrap;
+}
+
+.card{
+    width:20%;
+    background: white;
+    border: 1px solid  #213D54;
+    margin-bottom: 50px;
+    transition:0.3s;
+}
+    
+.card-header{
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right,#213D54, rgb(143, 154, 192));
+    color: #fff;
+
+}
+
+.card-body{
+    padding: 30px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.card:hover{
+    transform: scsle(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+/*button*/
+button.apply{
+    padding: 10px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #213D54;
+    color: #213D54;
+    cursor: pointer;
+    font-size: .75rem;
+    outline: none;
+    font-weight: bolder;
+  margin-top: 30px;  
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
+button.apply:hover{
+    background-color: #213D54;
+    color:white;
+}
+
+
+/*media quaries*/
+@media screen and (max-width:620px){
+
+.container1{
+    width: 100%;
+}
+.heading{
+    padding: 20px;
+    font-size: 20px;
+}
+    .card{
+        width:80%;
+    }
+
+    .card-body{
+        padding: 30px 20px;
+        text-align: left;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .card{
+        width:40%;
+    }
+    .card-body{
+        padding: 30px 20px;
+        text-align: left;
+        font-size: 15px;
+    }
+}

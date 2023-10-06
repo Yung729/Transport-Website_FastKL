@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        AACS1483 Group Assignment
+
+        Advertisement Page of FASTKL
+        Author: LAI YONG LE
+        DATE: 7/8/2022
+
+        Filename: user_login.html
+    -->
+    <meta charset ="utf-8"/>
+    <link href="../header.css" rel="stylesheet"/>
+    <link href="../footer.css" rel="stylesheet"/>
+    <link href="login.css" rel="stylesheet"/>
+    <script src="login.js" ></script>
+    <script src="../header.js" defer></script>
+    <title>Sign Up & Login | FastKl</title>
+</head>
+
+<body>
+    <header>
+      
+        <a href="../home/home.html" class="logo-container"><img class="logo" src="../source/logo.png" alt="logo" ></a>
+        <img src="../source/menu.png" onclick="myFunction()" alt="" class="sidemenu"/>
+        <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            
+            <li><a href="../contactus/contactus.html">Contact Us</a></li>
+            <li>
+                <div class="container">
+                <a href="#">About<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../Tender/Tender.html">Tenders</a></li>
+                    <li><a href="../Advertisement/Advertisement.html">Advertisement</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Service<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../map/map.html">Map</a></li>
+                    <li><a href="../ticket/tickets.html">Timetable</a></li>
+                    <li><a href="../price/price.html">Price</a></li>
+                    <li><a href="../product/product.html">Product</a></li>
+                </ul>   
+                </div>            
+            </li>
+            <li>
+                <div class="container">
+                <a href="#">Career<img src="../source/arrow.png" alt=""/></a>
+                <ul class="submenu">
+                    <li><a href="../career/career.html">Work</a></li>
+                    <li><a href="../apprenticeship/apprenticeship.html">Internship</a></li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <div id="loginStatus"  style="display:inline">
+                <a href="../login/user_login.html" class="login">Login</a>
+                </div>
+                <img src="../source/user.png" alt="user" class="login">
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="description">
+        <div id="p1">
+            <p>Don&apos;t just sign up! &emsp; >_<</p>
+        </div>
+        <div id="p2">
+            <p>Perhaps you can support us by applying</p>
+            <p>our <a href="../product/product.html">unique products</a></p>
+        </div>
+        <div id="p3">
+            <p>Well, we are still making improvement.</p>
+            <p>Feel free to give any feedback</p>
+            <p>to our products at <a href="../contactus/contactus.html">here</a></p>
+        </div>    
+    </div>
+
+    <div class="loginSystem">  	
+    <input type="checkbox" id="box">
+        <div class="signup">
+            <form autocomplete="off" method="get" id="signupForm" class="signupForm" action="../login/user_login.html" onsubmit="signupUser(event)">
+                <label for="box" id="loginLabel">Sign up</label>
+                <input type="text" name="nameBox" id="name" placeholder="Full Name as NRIC" required>
+                <input type="text" name="usernameBox" id="usernameSignup" placeholder="Username" required>
+                <input type="email" name="mailBox" id="email" placeholder="Email" required>
+                <input type="password" name="pswdBox" id="signupPswd" placeholder="Password" required>
+                <button type="submit">Sign up</button> 
+            </form>
+        </div>
+            
+        <div class="newLogin">
+            <form autocomplete="off" method="get" id="loginForm" class="loginForm" action="../home/home.html">
+                <label for="box" id="loginLabel">Login</label>
+            <div id="middle">
+                <input type="text" name="usernameBox" id="usernameLogin" placeholder="Username" required>
+                <div id="invalidUserName"></div>
+                <input type="password" name="pswd" id="loginPwsd" placeholder="Password" required>
+                <div id="invalidUserPass"></div>
+                <button onclick="findFunction()" type="button">Login</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    
+    
+    
+    <footer>
+    
+        <div class="footer-col1">
+            <div class="col1">
+                <h3>Quick Links</h3>
+                <a href="../career/career.html">Career</a>
+                <a href="../history/history.html">History</a>
+                <a href="../contactus/contactus.html">Contact us</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+            </div>
+
+            <div class="col2">
+                <h3>Service</h3>
+                <a href="../map/map.html">Map</a>
+                <a href="../product/product.html">Product</a>
+                <a href="../price/price.html">Price</a>
+                <a href="../contactus/contactus.html">Faq</a>
+            </div>  
+        </div>
+
+        <div class="col3">
+                    <h3>Find Us</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../source/location.png" alt="location"/> 
+                        No.542 Taman Indah,<br>50000 Kuala Lumpur
+                    </li>
+                    <li>
+                        <img src="../source/email.png" alt="email"/>                                         
+                        <a href="mailto:fastkl@gmail.com">fastkl@gmail.com</a>
+                    </li>
+                </ul>
+            </div> 
+                    
+        </div>
+        
+
+                    
+
+        <div class="col4">
+            <h3>Follow Us</h3>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="../source/fb.png" alt="fb"/>@fastklfb</a></li>
+                            <li><a href="#"><img src="../source/ig.png" alt="ig"/>@fastklig</a></li>
+                            <li><a href="#"><img src="../source/tiktok.png" alt="tiktok"/>@fastkltk</a></li>
+                            <li><a href="#"><img src="../source/twitter.png" alt="twitter"/>@fastkltt</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+        <div class="footer-col2">
+        <p>Copyright @ 2022 FastKl</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
